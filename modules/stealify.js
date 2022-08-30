@@ -1,5 +1,5 @@
 // dependencies
-const md = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.js')
+const markdown = window['markdown'] = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.js')
 
 
 /**
@@ -8,11 +8,8 @@ const md = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.
  * it is a waist of time. 
 */
 const loadIndexMdfromUrlHash = ({ newURL, oldURL }) => {
-
-  md.ready.then(markdown => {
+  markdown.ready.then(markdown => {
     console.log(markdown.parse("# hello\n*world*"))
   })
-
-  
 }
 window.addEventListener("hashchange", loadIndexMdfromUrlHash, false);
