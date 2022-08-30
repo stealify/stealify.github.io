@@ -1,6 +1,6 @@
 // dependencies
 //await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.js')
-const markdown = await window['markdown'].ready.then(markdown);
+const markdown = await window['markdown'].ready.then(md=>md);
 // We need to store that on load it is gone later it exists only on the first iteration
 const importMeta = import.meta.url;
 const isErrorPage = new URL(importMeta).searchParams.get('page') === "404";
