@@ -9,7 +9,7 @@ const md = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.
 */
 const loadIndexMdfromUrlHash = ({ newURL, oldURL }) => {
 
-  window["markdown"].ready.then(markdown => {
+  md.ready.then(markdown => {
     console.log(markdown.parse("# hello\n*world*"))
   })
 
