@@ -1,5 +1,6 @@
 // dependencies
-const markdown = window['markdown'] = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.js')
+//await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.js')
+const markdown = window['markdown'];
 
 
 /**
