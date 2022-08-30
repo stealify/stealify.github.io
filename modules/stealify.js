@@ -1,5 +1,5 @@
 // dependencies
-const md = await import('https://unpkg.com/browse/markdown-wasm@1.2.0/dist/markdown.es.js')
+const md = await import('https://unpkg.com/markdown-wasm@1.2.0/dist/markdown.es.js')
 
 
 /**
