@@ -19,7 +19,7 @@ const importMeta = import.meta.url;
   
 //}
 //window.addEventListener("hashchange", loadIndexMdfromUrlHash, false);
-window.document.body.innexHTML = `<iframe width="100% height="100%" src="/demo-jupyter/"></frame>
+window.document.body.innerHTML = `<iframe width="100% height="100%" src="/demo-jupyter/"></frame>`
 
 const handle = {
   ["404"]() {
