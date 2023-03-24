@@ -19,8 +19,11 @@ const importMeta = import.meta.url;
   
 //}
 //window.addEventListener("hashchange", loadIndexMdfromUrlHash, false);
-window.document.body.innerHTML = `<iframe width="100% height="100%" src="/demo-jupyter/"></frame>`
-
+Object.assign(Object.assign(document.body,{ innerHTML: `<iframe width="100%" height="100%" src="/demo-jupyter/"></frame>` }).style,{{
+    overflow: 'hidden';
+    margin: -2;
+    padding: 0;
+}})
 const handle = {
   ["404"]() {
     
