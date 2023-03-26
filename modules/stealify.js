@@ -24,6 +24,15 @@ Object.assign(Object.assign(document.body,{ innerHTML: `<iframe width="100%" hei
     margin: -2,
     padding: 0,
 })
+
+setInterval(()=>{
+  const logo = decodeURIComponent(`<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>`);
+  document.querySelector('iframe').contentDocument.querySelector("#jp-MainLogo") && document.querySelector('iframe').contentDocument.querySelector("#jp-MainLogo").innerHTML !== logo && (document.querySelector('iframe').contentDocument.querySelector("#jp-MainLogo").innerHTML = logo);  
+},500)
+document.querySelector('iframe').contentDocument.querySelector("#jp-MainLogo")) }})
+
+
+
 const handle = {
   ["404"]() {
     
